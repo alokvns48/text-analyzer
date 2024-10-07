@@ -6,6 +6,7 @@ const Button = ({ onClick, label, color }) => {
     <button
       onClick={onClick}
       className={`flex-1 px-4 py-2 ${bgClass} text-white rounded-lg ${hoverClass} focus:outline-none focus:ring-2 focus:ring-${color}-500 focus:ring-offset-2`}
+      aria-label={label}
     >
       {label}
     </button>
